@@ -16,4 +16,4 @@ et en écrivant dans un préfixe daté (`bronze/date=YYYY-MM-DD/`) pour ne pas �
 ## Remarques
 - Le Job était bloqué par le ResourceQuota `onyxia-quota` (« must specify limits.cpu »).
   J'ai ajouté `cpu: 200m` dans `resources.limits`.
-- Politique de bucket (Deny DeleteObject sur bronze/) : la suppression de `protected.csv` a été ACCEPTÉE / REFUSÉE.
+- Politique de bucket (Deny DeleteObject sur bronze/) : la suppression de `protected.csv` a été REFUSÉE (AccessDenied) : la politique de bucket est bien appliquée.
